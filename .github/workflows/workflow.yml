@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://kingarth0r.github.io/me/
+      url: https://kevinwilliams.quest
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
