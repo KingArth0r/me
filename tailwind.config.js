@@ -9,6 +9,7 @@ export default {
       colors: {
         'badger-red': '#c5050c',
         'cool-grey': '#646464',
+        'red-1000': '#1E0000'
       }
     },
   },
