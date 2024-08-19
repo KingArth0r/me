@@ -15,7 +15,7 @@ function ProjectIcon({title, image, description, onClick}) {
         >
             <h1 className={`text-3xl font-semibold py-2`}>{title}</h1>
             <img className="w-40 h-40 rounded-lg" src={image} alt={title}></img>
-            <p className="font-medium py-2">{description}</p>
+            <p className="font-medium py-2 text-center">{description}</p>
         </div>
     );
 };
