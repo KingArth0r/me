@@ -41,15 +41,17 @@ function Body() {
     // ];
 
     return (
-        <div className="flex flex-col justify-center items-center ">
-            <h2 className="text-badger-red text-3xl font-bold mb-4">Development Experience</h2>
-            <h2 className="text-badger-red text-3xl font-bold mb-4">Teaching Experience</h2>
-            <h2 className="text-badger-red text-3xl font-bold mb-4">Research</h2>
-            <h2 className="text-badger-red text-3xl font-bold mb-4">Coursework</h2>
-            <div className="grid-cols-3">
-                <ProjectIcon title='Real Analysis' image='images/Math521.png' description='Proving calculus from scratch: limits, continuity, derivatives, integrals, and more.'></ProjectIcon>
+        <div>
+            <div className="flex flex-col justify-center items-center ">
+                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer">Development Experience</h2>
+                <h2 className="text-badger-red text-3xl font-bold mb-4">Teaching Experience</h2>
+                <h2 className="text-badger-red text-3xl font-bold mb-4">Research</h2>
+                <h2 className="text-badger-red text-3xl font-bold mb-4">Coursework</h2>
+                <div className="grid-cols-3">
+                    <ProjectIcon title='Real Analysis' image='images/Math521.png' description='Proving calculus from scratch: limits, continuity, derivatives, integrals, and more.'></ProjectIcon>
+                </div>
+                <h2 className="text-badger-red text-3xl font-bold mb-4">Interests</h2>
             </div>
-            <h2 className="text-badger-red text-3xl font-bold mb-4">Interests</h2>
         </div>
     );
 };
