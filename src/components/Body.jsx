@@ -41,12 +41,15 @@ function Body() {
     // ];
 
     return (
-        <div>
-            <div className="flex flex-col justify-center items-center ">
-                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer">Development Experience</h2>
-                <h2 className="text-badger-red text-3xl font-bold mb-4">Teaching Experience</h2>
-                <h2 className="text-badger-red text-3xl font-bold mb-4">Research</h2>
-                <h2 className="text-badger-red text-3xl font-bold mb-4">Coursework</h2>
+        <div className="flex flex-row justify-center">
+            <div className="flex flex-col justify-start items-start ">
+                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer items-start">Development Experience</h2>
+                <p className="text-badger-red text-2xl font-semibold">Project 1</p>
+                <p>Project 2</p>
+                <p>Project 3</p>
+                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer">Teaching Experience</h2>
+                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer">Research</h2>
+                <h2 className="text-badger-red text-3xl font-bold mb-4 hover:scale-105 hover:cursor-pointer">Coursework</h2>
                 <div className="grid-cols-3">
                     <ProjectIcon title='Real Analysis' image='images/Math521.png' description='Proving calculus from scratch: limits, continuity, derivatives, integrals, and more.'></ProjectIcon>
                 </div>
