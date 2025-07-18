@@ -27,6 +27,10 @@ export default {
         'allthenticate-green': '#09e670',
         'nav-yellow': '#d19f2a',
         'nav-blue': '#008c95',
+        'cpp-blue': '#00599c',
+        'cpp-light': '#659AD2',
+        'schneider-orange': '#f3601c',
+        'cherry-red': '#d2042d',
       }
     },
   },

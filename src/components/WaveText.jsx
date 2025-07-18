@@ -9,6 +9,15 @@ function WaveText({text, type, color}) {
         navigators: 
             `from-nav-blue via-nav-blue to-nav-blue 
             hover:from-nav-blue hover:via-nav-blue hover:to-nav-yellow`,
+        perfectpitch:
+            `from-cpp-blue via-cpp-blue to-cpp-blue
+            hover:from-cpp-blue hover:via-cpp-blue hover:to-cpp-light`,
+        schneider:
+            `from-schneider-orange via-schneider-orange to-schneider-orange
+            hover:from-schneider-orange hover:via-schneider-orange hover:to-primary-text`,
+        mentourshop:
+            `from-badger-red via-badger-red to-badger-red
+            hover:from-badger-red hover:via-badger-red hover:to-primary-text`
     }
     const textType = {
         title: 'text-6xl font-semibold',
@@ -17,7 +26,7 @@ function WaveText({text, type, color}) {
     }
     const classString = `relative inline-block mt-2
         ${textType[type]} ${colorVariants[color]} 
-        text-transparent 
+        text-transparent
         bg-gradient-to-r 
         bg-[length:200%_100%] bg-left bg-clip-text 
         transition-all duration-300 

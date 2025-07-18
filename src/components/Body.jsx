@@ -3,20 +3,70 @@ import WaveText from "./WaveText";
 
 function Body() {
 
-    const mathCourses = [
+    const courses = [
+        {
+            title: 'Object Oriented Programming',
+            image: 'images/CS300.png',
+            description: 'lorem'
+        },
+        {
+            title: 'Data Structures and Algorithms',
+            image: 'images/CS400.jpg',
+            description: 'lorem'
+        },
+        {
+            title: 'Intro to Computer Engineering',
+            image: 'images/CS252.png',
+            description: 'lorem'
+        },
+        {
+            title: 'Algorithms',
+            image: 'images/CS577.png',
+            description: 'lorem'
+        },
+        {
+            title: 'Machine Organization and Programming',
+            image: 'images/CS354.png',
+            description: 'lorem'
+        },
+        {
+            title: 'Artificial Intelligence',
+            image: 'images/CS540.jpg',
+            description: 'lorem'
+        },
+        {
+            title: 'User Interfaces',
+            image: 'images/CS570.jpg',
+            description: 'lorem'
+        },
+        {
+            title: 'Operating Systems',
+            image: 'images/CS537.jpg',
+            description: 'lorem'
+        },
+        {
+            title: 'Networks',
+            image: 'images/CS640.jpg',
+            description: 'lorem'
+        },
+        {
+            title: 'Information Security',
+            image: 'images/CS642.jpg',
+            description: 'lorem'
+        },
         {
             title: 'Calculus',
-            image: 'images/Calc.png',
+            image: 'images/Calc.jpg',
             description: 'lorem'
         },
         {
             title: 'Differential Equations',
-            image: 'images/Math2320.png',
+            image: 'images/Math2320.jpg',
             description: 'lorem'
         },
         {
             title: 'Linear Algebra',
-            image: 'images/Math2318.png',
+            image: 'images/Math2318.jpg',
             description: 'lorem'
         },
         {
@@ -46,7 +96,7 @@ function Body() {
         },
         {
             title: 'Combinatorics',
-            image: 'images/Math475.jpg',
+            image: 'images/Math475.png',
             description: 'lorem'
         },
         {
@@ -54,64 +104,7 @@ function Body() {
             image: 'images/Math514.jpg',
             description: 'lorem'
         },
-    ];
-
-    const compsciCourses = [
-        {
-            title: 'Object Oriented Programming',
-            image: 'images/CS300.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Data Structures and Algorithms',
-            image: 'images/CS400.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Intro to Computer Engineering',
-            image: 'images/CS252.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Algorithms',
-            image: 'images/CS577.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Machine Organization and Programming',
-            image: 'images/CS354.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Artificial Intelligence',
-            image: 'images/CS540.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'User Interfaces',
-            image: 'images/CS570.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Big Data Systems',
-            image: 'images/CS544',
-            description: 'lorem'
-        },
-        {
-            title: 'Operating Systems',
-            image: 'images/CS537.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Networks',
-            image: 'images/CS640.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Information Security',
-            image: 'images/CS642.jpg',
-            description: 'lorem'
-        },
+        
     ];
 
     return (
@@ -138,7 +131,7 @@ function Body() {
                         <ul className="pl-6 list-disc">
                             <li>Began research on creating a virtual CTAPHID device to allow our service to appear as a FIDO passkey on Mac</li>
                             <li>Utilized DriverKit-Karabiner to create Virtual HID keyboard</li>
-                            <li>Contributed to Karabiner-Elements by documenting how to run from source without codesigning on Apple Silicon</li>
+                            <li>Contributed to Karabiner-Elements by documenting how to run from source without adding entitlements or Apple developer account</li>
                         </ul>
                     </li>
 
@@ -172,12 +165,22 @@ function Body() {
                     </li>
                 </ul>
 
+                <a href={"https://perfectpitchplusplus.tech"}>
+                    <WaveText text={"PerfectPitch++"} type={'section'} color={'perfectpitch'} />
+                </a>
+
+                <WaveText text={"MentourShop"} type={'section'} color={'mentourshop'} />
+
+                <WaveText text={"Schneider"} type={'section'} color={'schneider'}/>
+
                 <WaveText text={"Teaching Experience"} type={'section'} color={'default'}/>
                             
-                <WaveText text={"Coursework"} type={'section'} color={'default'}/> 
+                <WaveText text={'Completed Courses'} type={'section'} color={'default'}/> 
                             
-                <div className="grid-cols-3">
-                    <ProjectIcon title='Real Analysis' image='images/Math521.png' description='Proving calculus from scratch: limits, continuity, derivatives, integrals, and more.'></ProjectIcon>
+                <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                    {courses.map((course, i) => (
+                        <ProjectIcon key={i} title={course.title} image={course.image} description={course.description}/>
+                    ))}
                 </div>
                             
                 <WaveText text={'Interests'} type={'section'} color={'default'} /> 
