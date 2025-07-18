@@ -24,7 +24,9 @@ export default {
         'primary-text': '#e0e0e0',
         'secondary-text': '#a0a0a0',
         'allthenticate-blue': '#0e0ef5',
-        'allthenticate-green': '#09e670'
+        'allthenticate-green': '#09e670',
+        'nav-yellow': '#d19f2a',
+        'nav-blue': '#008c95',
       }
     },
   },

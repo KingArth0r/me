@@ -117,25 +117,71 @@ function Body() {
     return (
         <div className="flex flex-row justify-center">
             <div className="flex flex-col justify-start items-start bg-secondary-bg p-2 px-4 rounded-lg w-1/2">
-                <WaveText text={"Development experience"} size={'4'} weight={'semibold'}/>
-                <a className={`relative 
-                    inline-block 
-                    text-3xl font-semibold mb-4
-                    text-transparent 
-                    bg-gradient-to-r 
-                    from-allthenticate-blue via-allthenticate-blue to-allthenticate-blue
-                    bg-[length:200%_100%] bg-left bg-clip-text 
-                    transition-all duration-300 
-                    hover:from-allthenticate-blue hover:via-allthenticate-blue hover:to-allthenticate-green 
-                    hover:bg-right hover:scale-105 hover:cursor-pointer items-start
-                `} href="https://allthenticate.com">Allthenticate</a>
-                <a>Navigators</a>
-                <WaveText text={"Teaching Experience"} size={'4'} weight={'semibold'}/>
-                <WaveText text={"Coursework"} size={'3'} weight={'semibold'}/>
+                <WaveText text={"Development experience"} type={'section'} color={'default'}/>
+
+                <a href="https://allthenticate.com">
+                    <WaveText text={'Allthenticate'} type={'section'} color={'allthenticate'}/>
+                </a>
+
+                <p className="italic text-primary-text mx-3">Software Engineering Intern</p>
+
+                <ul className="text-primary-text pl-6 list-disc">
+                    <li>Logging password usage
+                        <ul className="pl-6 list-disc">
+                            <li>Adjusted existing Rust PAM module to allow logging password usage on Mac and Linux</li>
+                            <li>Created new protobuf API endpoints to log to backend</li>
+                            <li>Implemented timing each attempt to demonstrate that our service decreases authentication speed by over 400%</li>
+                        </ul>
+                    </li>
+
+                    <li>HID Device Emulation
+                        <ul className="pl-6 list-disc">
+                            <li>Began research on creating a virtual CTAPHID device to allow our service to appear as a FIDO passkey on Mac</li>
+                            <li>Utilized DriverKit-Karabiner to create Virtual HID keyboard</li>
+                            <li>Contributed to Karabiner-Elements by documenting how to run from source without codesigning on Apple Silicon</li>
+                        </ul>
+                    </li>
+
+                    <li>Fixed developer onboarding scripts for running our service from source</li>
+
+                    <li>Communicated to potential investors how our product stands out in the authentication market</li>
+                </ul>
+
+                <a href={"https://www.navigators.org"}>
+                    <WaveText text={"Navigators"} type={'section'} color={'navigators'}/>
+                </a>
+
+                <p className="italic text-primary-text mx-3">Software Development and IT Intern</p>
+
+                <ul className="text-primary-text pl-6 list-disc">
+                    <li>
+                        Lead development of the <i>Tech Library</i> application
+                        <ul>
+                            <li>Surveyed users to curate database of commonly borrowed tech equipment</li>
+                            <li>Developed full stack application allowing employees to independently checkout and return items</li>
+                            <li>Created a secure admin dashboard to allow IT department to manage inventory items, review feedback, and check logs</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Maintained and tested documentation for new employee computer configuration (Windows, Mac, Linux)
+                    </li>
+
+                    <li>
+                        Created BASH script to help automate organization wide migration from Jamf to Azure
+                    </li>
+                </ul>
+
+                <WaveText text={"Teaching Experience"} type={'section'} color={'default'}/>
+                            
+                <WaveText text={"Coursework"} type={'section'} color={'default'}/> 
+                            
                 <div className="grid-cols-3">
                     <ProjectIcon title='Real Analysis' image='images/Math521.png' description='Proving calculus from scratch: limits, continuity, derivatives, integrals, and more.'></ProjectIcon>
                 </div>
-                <WaveText text={'Interests'} size={3} weight={'semibold'}/>
+                            
+                <WaveText text={'Interests'} type={'section'} color={'default'} /> 
+                            
             </div>
         </div>
     );

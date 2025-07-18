@@ -8,7 +8,7 @@ function ProjectIcon({title, image, description, onClick}) {
         border-4 rounded-3xl 
         w-64 h-64 
         transform transition-transform duration-200 hover:scale-110  
-        bg-red-1000 text-primary-text border-secondary-text hover:border-badger-red
+        bg-red-1000 text-primary-text border-secondary-text hover:border-primary-text
         hover:cursor-pointer
         hover:shadow-md
         `}
