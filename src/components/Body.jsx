@@ -1,111 +1,6 @@
-import ProjectIcon from "./ProjectIcon";
 import WaveText from "./WaveText";
 
 function Body() {
-
-    const courses = [
-        {
-            title: 'Object Oriented Programming',
-            image: 'images/CS300.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Data Structures and Algorithms',
-            image: 'images/CS400.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Intro to Computer Engineering',
-            image: 'images/CS252.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Algorithms',
-            image: 'images/CS577.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Machine Organization and Programming',
-            image: 'images/CS354.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Artificial Intelligence',
-            image: 'images/CS540.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'User Interfaces',
-            image: 'images/CS570.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Operating Systems',
-            image: 'images/CS537.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Networks',
-            image: 'images/CS640.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Information Security',
-            image: 'images/CS642.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Calculus',
-            image: 'images/Calc.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Differential Equations',
-            image: 'images/Math2320.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Linear Algebra',
-            image: 'images/Math2318.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Probability',
-            image: 'images/Math3338.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Real Analysis I',
-            image: 'images/Math521.png',
-            description: 'Proving calculus from the ground up. Topics include constructing the real numbers, limits, sequences, series, continuity, derivatives, and Riemann integration'
-        },
-        {
-            title: 'Real Analysis II',
-            image: 'images/Math522.jpg',
-            description: 'A range of topics including sequences of functions, analysis on R^n, and functional analysis'
-        },
-        {
-            title: 'Abstract Algebra I',
-            image: 'images/Math541.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Abstract Algebra II',
-            image: 'images/Math542.jpg',
-            description: 'lorem'
-        },
-        {
-            title: 'Combinatorics',
-            image: 'images/Math475.png',
-            description: 'lorem'
-        },
-        {
-            title: 'Numerical Analysis',
-            image: 'images/Math514.jpg',
-            description: 'lorem'
-        },
-        
-    ];
 
     return (
         <div className="flex flex-row justify-center">
@@ -169,18 +64,31 @@ function Body() {
                     <WaveText text={"PerfectPitch++"} type={'section'} color={'perfectpitch'} />
                 </a>
 
-                <WaveText text={"MentourShop"} type={'section'} color={'mentourshop'} />
+                <WaveText text={"Mentu"} type={'section'} color={'mentu'} />
 
                 <WaveText text={"Schneider"} type={'section'} color={'schneider'}/>
 
                 <WaveText text={"Teaching Experience"} type={'section'} color={'default'}/>
                             
                 <WaveText text={'Completed Courses'} type={'section'} color={'default'}/> 
-                            
-                <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
-                    {courses.map((course, i) => (
-                        <ProjectIcon key={i} title={course.title} image={course.image} description={course.description}/>
-                    ))}
+
+                <p className="text-secondary-text mx-3 mt-1">
+                    Selected coursework is being moved to a dedicated page. For now, here is a compact summary.
+                </p>
+
+                <div className="mx-3 mt-3 w-full rounded-lg border border-border bg-surface p-4">
+                    <h3 className="text-xl font-semibold text-primary-text">Computer Science</h3>
+                    <p className="mt-1 text-secondary-text">
+                        Object Oriented Programming, Data Structures and Algorithms, Intro to Computer Engineering,
+                        Algorithms, Machine Organization and Programming, Artificial Intelligence, User Interfaces,
+                        Operating Systems, Networks, Information Security
+                    </p>
+
+                    <h3 className="mt-4 text-xl font-semibold text-primary-text">Mathematics</h3>
+                    <p className="mt-1 text-secondary-text">
+                        Calculus, Differential Equations, Linear Algebra, Probability, Real Analysis I, Real Analysis II,
+                        Abstract Algebra I, Abstract Algebra II, Combinatorics, Numerical Analysis
+                    </p>
                 </div>
                             
                 <WaveText text={'Interests'} type={'section'} color={'default'} /> 

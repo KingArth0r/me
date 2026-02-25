@@ -15,9 +15,9 @@ function WaveText({text, type, color}) {
         schneider:
             `from-schneider-orange via-schneider-orange to-schneider-orange
             hover:from-schneider-orange hover:via-schneider-orange hover:to-primary-text`,
-        mentourshop:
-            `from-badger-red via-badger-red to-badger-red
-            hover:from-badger-red hover:via-badger-red hover:to-primary-text`
+        mentu:
+            `from-primary via-primary to-primary-hover
+            hover:from-primary hover:via-primary hover:to-primary-hover`
     }
     const textType = {
         title: 'text-6xl font-semibold',
